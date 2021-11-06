@@ -9,6 +9,11 @@
 //  create main viewcontroller > embed a navigation controller > input title to main VC
 //  create second viewcontroller
 //  main viewcontroller > add nav bar button > drag button to second VC > segue - show
+//
+//  UNWIND
+//  set IBAction of UIStoryBoardSegue at destination
+//  add Button at the entry VC (do not add IBAction to button) and drag to "exit"
+//  send data thru prepare segue
 
 // XIB
 //  IXB viewController
