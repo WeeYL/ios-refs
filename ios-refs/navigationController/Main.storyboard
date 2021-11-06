@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RXe-Dx-c74">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="PbT-XB-Ota">
+            <objects>
+                <navigationController id="RXe-Dx-c74" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D1U-sB-GPV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FRV-zH-gfB" kind="relationship" relationship="rootViewController" id="G2a-fX-CXF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fuW-JA-lU4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205" y="-84"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="9nv-Hc-7RS">
+            <objects>
+                <viewController id="FRV-zH-gfB" customClass="NavControllerVC" customModule="ios_refs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M7N-au-9zW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJ0-5o-MQA">
+                                <rect key="frame" x="155.5" y="426.5" width="103" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RiZ-gT-BKl"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="XJ0-5o-MQA" firstAttribute="centerY" secondItem="M7N-au-9zW" secondAttribute="centerY" id="TzF-s4-gCx"/>
+                            <constraint firstItem="XJ0-5o-MQA" firstAttribute="centerX" secondItem="M7N-au-9zW" secondAttribute="centerX" id="gBg-2J-AGe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="DXb-DG-Nmj">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Up" id="kvS-4D-8In">
+                            <connections>
+                                <segue destination="DfB-QI-3wu" kind="show" id="o5l-ke-Mhx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="homeLbl" destination="XJ0-5o-MQA" id="2AZ-eg-VL5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6l-fb-czc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1011.5942028985507" y="-80.357142857142847"/>
+        </scene>
+        <!--Sign Up-->
+        <scene sceneID="6Sm-ox-oZ9">
+            <objects>
+                <viewController id="DfB-QI-3wu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zo3-4Q-7FC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dCl-OU-Fb1"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign Up" id="gun-Ar-dyZ">
+                        <barButtonItem key="rightBarButtonItem" title="Success" id="Lf9-tM-ngf">
+                            <connections>
+                                <segue destination="vQt-aJ-5aH" kind="show" id="3YP-hG-WW0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="InT-rO-oDX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791" y="-80"/>
+        </scene>
+        <!--Succes-->
+        <scene sceneID="Xmg-PJ-Pv6">
+            <objects>
+                <viewController id="vQt-aJ-5aH" customClass="NavControllerSuccessVC" customModule="ios_refs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OFa-op-6Rw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLh-xy-Qiw">
+                                <rect key="frame" x="134.5" y="427.5" width="145" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Back to Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="M6a-WU-Tdt" kind="unwind" unwindAction="unwindToHome:" id="2Ug-oV-gdh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uvB-xb-D8w"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="jLh-xy-Qiw" firstAttribute="centerX" secondItem="OFa-op-6Rw" secondAttribute="centerX" id="0os-SB-NJC"/>
+                            <constraint firstItem="jLh-xy-Qiw" firstAttribute="centerY" secondItem="OFa-op-6Rw" secondAttribute="centerY" id="Pfb-Z6-dDe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Succes" id="80f-gp-wk9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cs8-Yr-sV4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="M6a-WU-Tdt" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2570" y="-80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
