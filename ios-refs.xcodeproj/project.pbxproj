@@ -16,6 +16,12 @@
 		5011812B2732BAD100C2EED2 /* FirstTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011812A2732BAD100C2EED2 /* FirstTabVC.swift */; };
 		5011812F2732BC0000C2EED2 /* SecondTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5011812E2732BC0000C2EED2 /* SecondTabVC.swift */; };
 		501181322732BC1D00C2EED2 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501181312732BC1D00C2EED2 /* TabbarVC.swift */; };
+		5026F8622736A44900C38D65 /* IXB_Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5026F8612736A44900C38D65 /* IXB_Card.storyboard */; };
+		5026F8662736A4BD00C38D65 /* IXB_CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026F8642736A4BD00C38D65 /* IXB_CardViewController.swift */; };
+		5026F8672736A4BD00C38D65 /* IXB_CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5026F8652736A4BD00C38D65 /* IXB_CardViewController.xib */; };
+		5026F86B2736A51200C38D65 /* ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026F86A2736A51200C38D65 /* ReadMe.swift */; };
+		5026F8712736AB2400C38D65 /* IXB_MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026F8702736AB2400C38D65 /* IXB_MainViewController.swift */; };
+		5026F8762736AE5800C38D65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5026F8752736AE5800C38D65 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		5011812A2732BAD100C2EED2 /* FirstTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabVC.swift; sourceTree = "<group>"; };
 		5011812E2732BC0000C2EED2 /* SecondTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabVC.swift; sourceTree = "<group>"; };
 		501181312732BC1D00C2EED2 /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
+		5026F8612736A44900C38D65 /* IXB_Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IXB_Card.storyboard; sourceTree = "<group>"; };
+		5026F8642736A4BD00C38D65 /* IXB_CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IXB_CardViewController.swift; sourceTree = "<group>"; };
+		5026F8652736A4BD00C38D65 /* IXB_CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IXB_CardViewController.xib; sourceTree = "<group>"; };
+		5026F86A2736A51200C38D65 /* ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe.swift; sourceTree = "<group>"; };
+		5026F8702736AB2400C38D65 /* IXB_MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IXB_MainViewController.swift; sourceTree = "<group>"; };
+		5026F8752736AE5800C38D65 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 		5011810C2732B65F00C2EED2 /* ios-refs */ = {
 			isa = PBXGroup;
 			children = (
+				5026F85F2736A42200C38D65 /* ixb */,
 				5011810D2732B65F00C2EED2 /* AppDelegate.swift */,
 				5011810F2732B65F00C2EED2 /* SceneDelegate.swift */,
 				501181252732B97900C2EED2 /* navigationController */,
@@ -69,6 +82,8 @@
 				501181162732B66200C2EED2 /* Assets.xcassets */,
 				501181182732B66200C2EED2 /* LaunchScreen.storyboard */,
 				5011811B2732B66200C2EED2 /* Info.plist */,
+				5026F86A2736A51200C38D65 /* ReadMe.swift */,
+				5026F8612736A44900C38D65 /* IXB_Card.storyboard */,
 			);
 			path = "ios-refs";
 			sourceTree = "<group>";
@@ -90,6 +105,17 @@
 				501181262732B9B400C2EED2 /* navigationController.storyboard */,
 			);
 			path = navigationController;
+			sourceTree = "<group>";
+		};
+		5026F85F2736A42200C38D65 /* ixb */ = {
+			isa = PBXGroup;
+			children = (
+				5026F8642736A4BD00C38D65 /* IXB_CardViewController.swift */,
+				5026F8752736AE5800C38D65 /* Main.storyboard */,
+				5026F8652736A4BD00C38D65 /* IXB_CardViewController.xib */,
+				5026F8702736AB2400C38D65 /* IXB_MainViewController.swift */,
+			);
+			path = ixb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +175,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5026F8622736A44900C38D65 /* IXB_Card.storyboard in Resources */,
+				5026F8762736AE5800C38D65 /* Main.storyboard in Resources */,
 				5011811A2732B66200C2EED2 /* LaunchScreen.storyboard in Resources */,
+				5026F8672736A4BD00C38D65 /* IXB_CardViewController.xib in Resources */,
 				501181172732B66200C2EED2 /* Assets.xcassets in Resources */,
 				501181272732B9B400C2EED2 /* navigationController.storyboard in Resources */,
 				501181152732B65F00C2EED2 /* Main.storyboard in Resources */,
@@ -166,6 +195,9 @@
 				5011810E2732B65F00C2EED2 /* AppDelegate.swift in Sources */,
 				5011812F2732BC0000C2EED2 /* SecondTabVC.swift in Sources */,
 				501181102732B65F00C2EED2 /* SceneDelegate.swift in Sources */,
+				5026F8662736A4BD00C38D65 /* IXB_CardViewController.swift in Sources */,
+				5026F86B2736A51200C38D65 /* ReadMe.swift in Sources */,
+				5026F8712736AB2400C38D65 /* IXB_MainViewController.swift in Sources */,
 				5011812B2732BAD100C2EED2 /* FirstTabVC.swift in Sources */,
 				501181322732BC1D00C2EED2 /* TabbarVC.swift in Sources */,
 			);
