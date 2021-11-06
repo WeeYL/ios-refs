@@ -21,6 +21,10 @@
 		5026F86B2736A51200C38D65 /* ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026F86A2736A51200C38D65 /* ReadMe.swift */; };
 		5026F8712736AB2400C38D65 /* IXB_MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026F8702736AB2400C38D65 /* IXB_MainViewController.swift */; };
 		5026F8762736AE5800C38D65 /* IXB_Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5026F8752736AE5800C38D65 /* IXB_Main.storyboard */; };
+		5026F87B2736B5BD00C38D65 /* PushNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026F87A2736B5BD00C38D65 /* PushNavVC.swift */; };
+		5026F87F2736B5CF00C38D65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5026F87E2736B5CF00C38D65 /* Main.storyboard */; };
+		5026F8852736B63A00C38D65 /* Push_RedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026F8842736B63A00C38D65 /* Push_RedVC.swift */; };
+		5026F88B2736BACF00C38D65 /* Push_BlueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5026F88A2736BACF00C38D65 /* Push_BlueVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		5026F86A2736A51200C38D65 /* ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe.swift; sourceTree = "<group>"; };
 		5026F8702736AB2400C38D65 /* IXB_MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IXB_MainViewController.swift; sourceTree = "<group>"; };
 		5026F8752736AE5800C38D65 /* IXB_Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IXB_Main.storyboard; sourceTree = "<group>"; };
+		5026F87A2736B5BD00C38D65 /* PushNavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNavVC.swift; sourceTree = "<group>"; };
+		5026F87E2736B5CF00C38D65 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5026F8842736B63A00C38D65 /* Push_RedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Push_RedVC.swift; sourceTree = "<group>"; };
+		5026F88A2736BACF00C38D65 /* Push_BlueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Push_BlueVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 				501181182732B66200C2EED2 /* LaunchScreen.storyboard */,
 				5011811B2732B66200C2EED2 /* Info.plist */,
 				5026F86A2736A51200C38D65 /* ReadMe.swift */,
+				5026F8812736B5F200C38D65 /* pushNavigation */,
 			);
 			path = "ios-refs";
 			sourceTree = "<group>";
@@ -113,6 +122,17 @@
 				5026F8702736AB2400C38D65 /* IXB_MainViewController.swift */,
 			);
 			path = ixb;
+			sourceTree = "<group>";
+		};
+		5026F8812736B5F200C38D65 /* pushNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				5026F87A2736B5BD00C38D65 /* PushNavVC.swift */,
+				5026F87E2736B5CF00C38D65 /* Main.storyboard */,
+				5026F88A2736BACF00C38D65 /* Push_BlueVC.swift */,
+				5026F8842736B63A00C38D65 /* Push_RedVC.swift */,
+			);
+			path = pushNavigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5026F87F2736B5CF00C38D65 /* Main.storyboard in Resources */,
 				5026F8762736AE5800C38D65 /* IXB_Main.storyboard in Resources */,
 				5011811A2732B66200C2EED2 /* LaunchScreen.storyboard in Resources */,
 				5026F8672736A4BD00C38D65 /* IXB_CardViewController.xib in Resources */,
@@ -191,7 +212,10 @@
 				5011810E2732B65F00C2EED2 /* AppDelegate.swift in Sources */,
 				5011812F2732BC0000C2EED2 /* SecondTabVC.swift in Sources */,
 				501181102732B65F00C2EED2 /* SceneDelegate.swift in Sources */,
+				5026F87B2736B5BD00C38D65 /* PushNavVC.swift in Sources */,
 				5026F8662736A4BD00C38D65 /* IXB_CardViewController.swift in Sources */,
+				5026F88B2736BACF00C38D65 /* Push_BlueVC.swift in Sources */,
+				5026F8852736B63A00C38D65 /* Push_RedVC.swift in Sources */,
 				5026F86B2736A51200C38D65 /* ReadMe.swift in Sources */,
 				5026F8712736AB2400C38D65 /* IXB_MainViewController.swift in Sources */,
 				5011812B2732BAD100C2EED2 /* FirstTabVC.swift in Sources */,
